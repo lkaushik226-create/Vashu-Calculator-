@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vasu Kaushik - World's Best Badminton Player</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Arial', sans-serif;
+    }
+    body {
+      background: linear-gradient(135deg, #1e3c72, #2a5298);
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      text-align: center;
+    }
+    .container {
+      background: rgba(255, 255, 255, 0.1);
+      padding: 30px;
+      border-radius: 20px;
+      backdrop-filter: blur(10px);
+      box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+      width: 90%;
+      max-width: 400px;
+    }
+    h1 {
+      font-size: 24px;
+      margin-bottom: 5px;
+      color: #FFD700; /* gold */
+    }
+    h2 {
+      font-size: 16px;
+      margin-bottom: 20px;
+      font-weight: 300;
+    }
+    input {
+      width: 100%;
+      padding: 12px;
+      margin: 10px 0;
+      border: none;
+      border-radius: 10px;
+      font-size: 16px;
+      outline: none;
+    }
+    button {
+      width: 100%;
+      padding: 12px;
+      margin-top: 15px;
+      background: #FFD700;
+      color: #1e3c72;
+      border: none;
+      border-radius: 10px;
+      font-size: 18px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    button:hover {
+      background: #fff;
+      transform: scale(1.05);
+    }
+    #result {
+      margin-top: 20px;
+      font-size: 20px;
+      font-weight: bold;
+    }
+    .footer {
+      margin-top: 25px;
+      font-size: 12px;
+      opacity: 0.8;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h1>Vasu Kaushik</h1>
+    <h2>World's Best Badminton Player 🏸</h2>
+    
+    <h3>Value Adder Tool</h3>
+    
