@@ -1,109 +1,467 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vashu Kaushik | Badminton Athlete</title>
-    <style>
-        :root {
-            --primary: #0a192f;
-            --accent: #d4af37;
-            --light: #f8f9fa;
-            --text: #333333;
-        }
-        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
-        body { background-color: var(--light); color: var(--text); line-height: 1.6; }
-        header { background: var(--primary); color: white; padding: 2rem 1rem; text-align: center; border-bottom: 4px solid var(--accent); }
-        header h1 { font-size: 2.5rem; color: var(--accent); margin-bottom: 0.5rem; }
-        header p { font-size: 1.2rem; font-weight: 300; }
-        nav { display: flex; justify-content: center; background: #020c1b; padding: 0.8rem; position: sticky; top: 0; z-index: 100; }
-        nav a { color: white; text-decoration: none; margin: 0 1.5rem; font-weight: 600; transition: color 0.3s; }
-        nav a:hover { color: var(--accent); }
-        .container { max-width: 1000px; margin: auto; padding: 2rem 1rem; }
-        section { margin-bottom: 3rem; background: white; padding: 2rem; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); }
-        h2 { color: var(--primary); margin-bottom: 1.5rem; border-bottom: 2px solid var(--accent); padding-bottom: 0.5rem; }
-        .profile-flex { display: flex; flex-wrap: wrap; gap: 2rem; align-items: center; }
-        .profile-img { flex: 1; min-width: 250px; text-align: center; }
-        .profile-img img { width: 100%; max-width: 280px; border-radius: 50%; border: 5px solid var(--accent); }
-        .profile-text { flex: 2; min-width: 280px; }
-        .timeline { list-style: none; padding-left: 1rem; border-left: 3px solid var(--accent); }
-        .timeline li { margin-bottom: 1.5rem; position: relative; padding-left: 1.5rem; }
-        .timeline li::before { content: ''; position: absolute; left: -8px; top: 5px; width: 13px; height: 13px; border-radius: 50%; background: var(--accent); }
-        .sponsor-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1.5rem; }
-        .sponsor-card { border: 1px solid #ddd; padding: 1.5rem; border-radius: 6px; text-align: center; transition: transform 0.3s, border-color 0.3s; }
-        .sponsor-card:hover { transform: translateY(-5px); border-color: var(--accent); }
-        .sponsor-card h3 { color: var(--primary); margin-bottom: 0.5rem; }
-        .contact-box { text-align: center; padding: 1.5rem; background: #f1f5f9; border-radius: 6px; }
-        .contact-box a { color: var(--primary); font-weight: bold; text-decoration: none; font-size: 1.2rem; }
-        .contact-box a:hover { color: var(--accent); }
-        footer { text-align: center; padding: 1.5rem; background: var(--primary); color: white; font-size: 0.9rem; }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vashu Kaushik | Badminton Player — Target World No. 1</title>
+<meta name="description" content="Official page of Vashu Kaushik — Under-13 Gold, Zone Delhi Badminton Championship. Under-11 Bronze, April 2026. Rising junior badminton player with a target of World No. 1. Sponsorship enquiries welcome.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://thrivewithkaushik.com/vashu-kaushik">
+<meta property="og:type" content="profile">
+<meta property="og:title" content="Vashu Kaushik | Badminton Player">
+<meta property="og:description" content="Under-13 Gold, Zone Delhi. Under-11 Bronze, April 2026. Target: World No. 1. Sponsorship categories open.">
+<meta property="og:url" content="https://thrivewithkaushik.com/vashu-kaushik">
+<meta name="theme-color" content="#0B1F3A">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Vashu Kaushik",
+  "jobTitle": "Junior Badminton Player",
+  "email": "mailto:thrivewithkaushik@gmail.com",
+  "award": ["Under-13 Gold, Zone Delhi Badminton Championship", "Under-11 Bronze, April 2026"],
+  "sameAs": []
+}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy:#0B1F3A;
+    --navy-deep:#071429;
+    --gold:#C9A227;
+    --gold-soft:#E4C660;
+    --cream:#F8F4E9;
+    --ink:#1B2436;
+    --line: rgba(201,162,39,0.35);
+  }
+  *{margin:0;padding:0;box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    background:var(--cream);
+    color:var(--ink);
+    font-family:'Inter',sans-serif;
+    overflow-x:hidden;
+  }
+  h1,h2,h3,.display{
+    font-family:'Playfair Display',serif;
+    letter-spacing:0.01em;
+  }
+  a{color:inherit;text-decoration:none;}
+  .wrap{max-width:1140px;margin:0 auto;padding:0 28px;}
+
+  /* skip link for a11y */
+  .skip-link{position:absolute;left:-999px;top:0;background:var(--gold);color:var(--navy);padding:10px 16px;z-index:999;}
+  .skip-link:focus{left:12px;top:12px;}
+
+  /* NAV */
+  header{
+    position:sticky;top:0;z-index:50;
+    background:rgba(11,31,58,0.92);
+    backdrop-filter:blur(8px);
+    border-bottom:1px solid var(--line);
+  }
+  nav{display:flex;align-items:center;justify-content:space-between;padding:16px 28px;max-width:1140px;margin:0 auto;}
+  .brand{display:flex;align-items:center;gap:10px;color:var(--cream);font-family:'Playfair Display',serif;font-weight:700;font-size:1.15rem;}
+  .brand .dot{width:8px;height:8px;background:var(--gold);border-radius:50%;display:inline-block;}
+  .navlinks{display:flex;gap:26px;font-size:0.92rem;color:var(--cream);}
+  .navlinks a{opacity:0.82;padding:6px 2px;border-bottom:1px solid transparent;transition:.2s;}
+  .navlinks a:hover,.navlinks a:focus-visible{opacity:1;border-color:var(--gold);}
+  .navlinks a:focus-visible{outline:2px solid var(--gold);outline-offset:3px;}
+  .menu-btn{display:none;background:none;border:1px solid var(--line);color:var(--cream);padding:8px 12px;border-radius:6px;}
+
+  /* HERO */
+  .hero{
+    position:relative;
+    background:radial-gradient(circle at 78% 18%, #142a4d 0%, var(--navy) 45%, var(--navy-deep) 100%);
+    color:var(--cream);
+    padding:96px 0 70px;
+    overflow:hidden;
+  }
+  .court-lines{position:absolute;inset:0;opacity:0.14;pointer-events:none;}
+  .court-lines svg{width:100%;height:100%;}
+  .hero-grid{position:relative;display:grid;grid-template-columns:1.15fr 0.85fr;gap:48px;align-items:center;z-index:2;}
+  .eyebrow{
+    display:inline-flex;align-items:center;gap:8px;
+    font-size:0.72rem;letter-spacing:0.18em;text-transform:uppercase;
+    color:var(--gold-soft);border:1px solid var(--line);padding:7px 14px;border-radius:999px;margin-bottom:22px;
+  }
+  .hero h1{font-size:clamp(2.4rem,5vw,3.6rem);line-height:1.08;font-weight:800;}
+  .hero h1 span{color:var(--gold-soft);font-style:italic;font-weight:600;}
+  .hero p.lede{margin-top:20px;font-size:1.08rem;line-height:1.65;color:rgba(248,244,233,0.82);max-width:46ch;}
+  .hero-ctas{display:flex;gap:14px;margin-top:32px;flex-wrap:wrap;}
+  .btn{
+    display:inline-flex;align-items:center;gap:8px;
+    padding:13px 24px;border-radius:6px;font-weight:600;font-size:0.92rem;
+    transition:transform .2s ease, box-shadow .2s ease;
+  }
+  .btn:focus-visible{outline:2px solid var(--gold);outline-offset:3px;}
+  .btn-gold{background:var(--gold);color:var(--navy-deep);}
+  .btn-gold:hover{transform:translateY(-2px);box-shadow:0 10px 24px rgba(201,162,39,0.35);}
+  .btn-ghost{border:1px solid var(--line);color:var(--cream);}
+  .btn-ghost:hover{border-color:var(--gold);}
+
+  /* Target strip */
+  .target-strip{margin-top:40px;display:flex;gap:28px;flex-wrap:wrap;}
+  .target-strip div{border-left:2px solid var(--gold);padding-left:12px;}
+  .target-strip .num{font-family:'Playfair Display',serif;font-size:1.5rem;color:var(--gold-soft);font-weight:700;}
+  .target-strip .lbl{font-size:0.74rem;text-transform:uppercase;letter-spacing:0.1em;color:rgba(248,244,233,0.6);}
+
+  /* portrait / dummy pic */
+  .portrait-frame{
+    position:relative;
+    aspect-ratio:3/4;
+    border-radius:14px;
+    background:linear-gradient(160deg,#16305a,#0d1f3d);
+    border:1px solid var(--line);
+    display:flex;align-items:center;justify-content:center;
+    box-shadow:0 30px 70px rgba(0,0,0,0.45);
+  }
+  .avatar-svg{width:62%;}
+  .portrait-tag{
+    position:absolute;bottom:16px;left:16px;right:16px;
+    background:rgba(7,20,41,0.75);backdrop-filter:blur(4px);
+    border:1px solid var(--line);border-radius:8px;
+    padding:10px 14px;font-size:0.78rem;color:var(--gold-soft);
+    letter-spacing:0.04em;
+  }
+  .shuttle-path{position:absolute;inset:0;pointer-events:none;}
+
+  /* SECTION generic */
+  section{padding:78px 0;}
+  .section-head{max-width:640px;margin-bottom:44px;}
+  .kicker{font-size:0.72rem;text-transform:uppercase;letter-spacing:0.18em;color:var(--navy);opacity:0.55;margin-bottom:10px;}
+  .section-head h2{font-size:clamp(1.7rem,3.4vw,2.3rem);font-weight:700;color:var(--navy);}
+  .section-head p{margin-top:12px;color:#4b5468;line-height:1.6;}
+
+  /* ACHIEVEMENTS */
+  .achv-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;}
+  .medal-card{
+    background:#fff;border:1px solid rgba(11,31,58,0.08);border-radius:12px;
+    padding:30px 26px;position:relative;overflow:hidden;
+    box-shadow:0 8px 30px rgba(11,31,58,0.06);
+  }
+  .medal-card::before{
+    content:"";position:absolute;top:-40px;right:-40px;width:120px;height:120px;
+    border-radius:50%;background:radial-gradient(circle,var(--gold) 0%,transparent 70%);opacity:0.18;
+  }
+  .medal-badge{
+    width:46px;height:46px;border-radius:50%;
+    display:flex;align-items:center;justify-content:center;
+    font-family:'Playfair Display',serif;font-weight:700;color:#fff;margin-bottom:18px;
+  }
+  .medal-badge.gold{background:linear-gradient(145deg,#E4C660,#B8891B);}
+  .medal-badge.bronze{background:linear-gradient(145deg,#C97B3E,#8A4E23);}
+  .medal-badge.target{background:linear-gradient(145deg,var(--navy),var(--navy-deep));}
+  .medal-card h3{font-size:1.15rem;color:var(--navy);margin-bottom:6px;}
+  .medal-card .date{font-size:0.78rem;color:var(--gold);font-weight:600;text-transform:uppercase;letter-spacing:0.06em;margin-bottom:10px;display:block;}
+  .medal-card p{font-size:0.92rem;color:#5a6274;line-height:1.55;}
+
+  /* TIMELINE / JOURNEY */
+  .journey{background:var(--navy);color:var(--cream);}
+  .journey .section-head h2{color:var(--cream);}
+  .journey .kicker{color:var(--gold-soft);opacity:0.9;}
+  .journey .section-head p{color:rgba(248,244,233,0.7);}
+  .tline{position:relative;padding-left:28px;border-left:2px solid var(--line);display:flex;flex-direction:column;gap:34px;}
+  .tline .item{position:relative;}
+  .tline .item::before{
+    content:"";position:absolute;left:-34px;top:4px;width:12px;height:12px;border-radius:50%;
+    background:var(--gold);box-shadow:0 0 0 4px rgba(201,162,39,0.18);
+  }
+  .tline .yr{font-size:0.78rem;color:var(--gold-soft);letter-spacing:0.08em;text-transform:uppercase;font-weight:600;}
+  .tline h4{font-size:1.1rem;margin-top:4px;}
+  .tline p{color:rgba(248,244,233,0.72);font-size:0.92rem;margin-top:6px;line-height:1.55;max-width:60ch;}
+
+  /* SPONSORSHIP */
+  .spons-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;}
+  .spons-card{
+    border:1px solid rgba(11,31,58,0.1);border-radius:12px;padding:26px 24px;background:#fff;
+    display:flex;flex-direction:column;gap:10px;
+    transition:.2s;
+  }
+  .spons-card:hover{border-color:var(--gold);transform:translateY(-3px);box-shadow:0 14px 30px rgba(11,31,58,0.08);}
+  .spons-card .tier{font-size:0.7rem;text-transform:uppercase;letter-spacing:0.14em;color:var(--gold);font-weight:700;}
+  .spons-card h3{font-size:1.1rem;color:var(--navy);}
+  .spons-card p{font-size:0.88rem;color:#5a6274;line-height:1.55;}
+  .spons-note{
+    margin-top:36px;padding:24px 26px;border-radius:12px;
+    background:var(--cream);border:1px dashed var(--gold);
+    font-size:0.95rem;color:var(--navy);line-height:1.6;
+  }
+  .spons-note strong{color:var(--navy);}
+
+  /* CONTACT + SEARCH */
+  .contact{background:linear-gradient(180deg,#fff,var(--cream));}
+  .contact-card{
+    background:var(--navy);color:var(--cream);border-radius:16px;
+    padding:46px 40px;display:grid;grid-template-columns:1.1fr 0.9fr;gap:40px;align-items:center;
+  }
+  .contact-card h2{color:var(--cream);font-size:1.9rem;}
+  .contact-card p{color:rgba(248,244,233,0.75);margin-top:12px;line-height:1.6;}
+  .mail-btn{
+    margin-top:22px;display:inline-flex;align-items:center;gap:10px;
+    background:var(--gold);color:var(--navy-deep);padding:13px 22px;border-radius:6px;font-weight:700;
+  }
+  .search-box{background:rgba(248,244,233,0.06);border:1px solid var(--line);border-radius:10px;padding:22px;}
+  .search-box label{font-size:0.78rem;text-transform:uppercase;letter-spacing:0.08em;color:var(--gold-soft);}
+  .search-row{display:flex;gap:8px;margin-top:10px;}
+  .search-row input{
+    flex:1;padding:11px 12px;border-radius:6px;border:1px solid var(--line);
+    background:rgba(255,255,255,0.06);color:var(--cream);font-size:0.9rem;
+  }
+  .search-row input::placeholder{color:rgba(248,244,233,0.45);}
+  .search-row input:focus-visible{outline:2px solid var(--gold);}
+  .search-row button{
+    background:var(--gold);color:var(--navy-deep);border:none;padding:0 16px;border-radius:6px;font-weight:700;cursor:pointer;
+  }
+  .search-box small{display:block;margin-top:10px;color:rgba(248,244,233,0.55);font-size:0.76rem;}
+
+  footer{padding:30px 0;text-align:center;font-size:0.82rem;color:#5a6274;}
+  footer a{color:var(--navy);border-bottom:1px solid var(--gold);}
+
+  @media (max-width:860px){
+    .navlinks{display:none;}
+    .menu-btn{display:inline-block;}
+    .hero-grid{grid-template-columns:1fr;}
+    .portrait-frame{max-width:340px;margin:0 auto;}
+    .achv-grid,.spons-grid{grid-template-columns:1fr;}
+    .contact-card{grid-template-columns:1fr;}
+  }
+  @media (prefers-reduced-motion: reduce){
+    *{animation:none !important;transition:none !important;}
+  }
+
+  /* signature: shuttlecock trajectory animation */
+  .shuttle{
+    position:absolute;width:16px;height:16px;
+    offset-rotate:auto;
+    animation:fly 3.2s ease-in-out infinite;
+  }
+  @keyframes fly{
+    0%{offset-distance:0%;opacity:0;}
+    8%{opacity:1;}
+    92%{opacity:1;}
+    100%{offset-distance:100%;opacity:0;}
+  }
+</style>
 </head>
 <body>
+<a href="#main" class="skip-link">Skip to content</a>
 
-    <header>
-        <h1>Vashu Kaushik</h1>
-        <p>Rising Badminton Star | Target: World No. 1</p>
-    </header>
+<header>
+  <nav aria-label="Primary">
+    <a class="brand" href="#top"><span class="dot"></span>Vashu Kaushik</a>
+    <div class="navlinks">
+      <a href="#achievements">Achievements</a>
+      <a href="#journey">Journey</a>
+      <a href="#sponsorship">Sponsorship</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <button class="menu-btn" aria-label="Menu">☰</button>
+  </nav>
+</header>
 
-    <nav>
-        <a href="#about">About</a>
-        <a href="#achievements">Achievements</a>
-        <a href="#sponsorship">Sponsorship</a>
-        <a href="#contact">Contact</a>
-    </nav>
-
-    <div class="container">
-        <section id="about" class="profile-flex">
-            <div class="profile-img">
-                <img src="https://placeholder.com" alt="Vashu Kaushik Dummy Pic">
-            </div>
-            <div class="profile-text">
-                <h2>About Vashu</h2>
-                <p>Welcome to the official athlete profile of Vashu Kaushik. Dedicated, disciplined, and relentless on the court, Vashu is currently dominating junior circuits with an ultimate vision of representing the nation and securing the World No. 1 ranking.</p>
-            </div>
-        </section>
-
-        <section id="achievements">
-            <h2>Career Milestones</h2>
-            <ul class="timeline">
-                <li><strong>Gold Medal</strong> - Under-13 Badminton Championship (Zone Delhi)</li>
-                <li><strong>Bronze Medal</strong> - Under-11 Badminton Championship (April 2026)</li>
-            </ul>
-        </section>
-
-        <section id="sponsorship">
-            <h2>Invest & Sponsor</h2>
-            <p style="margin-bottom: 1.5rem;">Join Vashu Kaushik on the journey to the top. Partnering with a dedicated young athlete offers great visibility and community impact. Explore our sponsorship tiers below:</p>
-            <div class="sponsor-grid">
-                <div class="sponsor-card">
-                    <h3>Title Sponsor</h3>
-                    <p>Prime logo placement on kit, equipment branding, and social media mentions.</p>
-                </div>
-                <div class="sponsor-card">
-                    <h3>Supporting Partner</h3>
-                    <p>Kit branding and regular performance updates/recognition.</p>
-                </div>
-                <div class="sponsor-card">
-                    <h3>Friend of Athlete</h3>
-                    <p>Direct contribution towards training, travel, and tournament fees.</p>
-                </div>
-            </div>
-        </section>
-
-        <section id="contact">
-            <h2>Get in Touch</h2>
-            <div class="contact-box">
-                <p>Interested in collaborating or supporting Vashu's journey?</p>
-                <p style="margin-top: 0.5rem;">Email us directly at:</p>
-                <a href="mailto:thrivewithkaushik@gmail.com">thrivewithkaushik@gmail.com</a>
-            </div>
-        </section>
+<main id="main">
+  <section class="hero" id="top">
+    <div class="court-lines" aria-hidden="true">
+      <svg viewBox="0 0 1140 600" preserveAspectRatio="none">
+        <rect x="40" y="40" width="1060" height="520" fill="none" stroke="#C9A227" stroke-width="2"/>
+        <line x1="40" y1="300" x2="1100" y2="300" stroke="#C9A227" stroke-width="2"/>
+        <line x1="570" y1="40" x2="570" y2="560" stroke="#C9A227" stroke-width="1.4"/>
+        <rect x="140" y="140" width="860" height="320" fill="none" stroke="#C9A227" stroke-width="1.2"/>
+      </svg>
+      <svg style="position:absolute;top:0;left:0;width:0;height:0;">
+        <path id="shuttlePath" d="M 80 480 Q 400 60 1060 380" fill="none"/>
+      </svg>
+      <div class="shuttle" style="offset-path:path('M 80 480 Q 400 60 1060 380');" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="#E4C660"><path d="M12 2 L15 9 L22 8 L17 13 L20 20 L12 16 L4 20 L7 13 L2 8 L9 9 Z"/></svg>
+      </div>
     </div>
 
-    <footer>
-        <p>&copy; 2026 Vashu Kaushik. All rights reserved.</p>
-    </footer>
+    <div class="wrap hero-grid">
+      <div>
+        <span class="eyebrow">Junior Badminton • India</span>
+        <h1>Vashu Kaushik<br><span>chasing the world's top rank, one rally at a time.</span></h1>
+        <p class="lede">A young badminton player from Delhi with a clear ambition: World No. 1. Every training session, tournament, and comeback is a step on that path.</p>
 
+        <div class="target-strip">
+          <div>
+            <div class="num">Gold</div>
+            <div class="lbl">U-13 · Zone Delhi</div>
+          </div>
+          <div>
+            <div class="num">Bronze</div>
+            <div class="lbl">U-11 · April 2026</div>
+          </div>
+          <div>
+            <div class="num">#1</div>
+            <div class="lbl">World Ranking Target</div>
+          </div>
+        </div>
+
+        <div class="hero-ctas">
+          <a class="btn btn-gold" href="#sponsorship">Sponsorship Categories</a>
+          <a class="btn btn-ghost" href="#contact">Get in Touch</a>
+        </div>
+      </div>
+
+      <div class="portrait-frame">
+        <svg class="avatar-svg" viewBox="0 0 200 240" role="img" aria-label="Placeholder portrait of a young badminton player">
+          <rect width="200" height="240" rx="14" fill="#0d2242"/>
+          <circle cx="100" cy="88" r="46" fill="#C9A227" opacity="0.9"/>
+          <text x="100" y="102" font-family="Playfair Display, serif" font-size="42" font-weight="700" fill="#0B1F3A" text-anchor="middle">VK</text>
+          <path d="M40 220 Q100 160 160 220 Z" fill="#16305a"/>
+          <rect x="86" y="150" width="6" height="60" fill="#E4C660"/>
+          <circle cx="89" cy="146" r="14" fill="none" stroke="#E4C660" stroke-width="3"/>
+        </svg>
+        <div class="portrait-tag">Placeholder image — official photo to be added</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="achievements">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="kicker">Track Record</div>
+        <h2>Achievements on court</h2>
+        <p>Early results that mark the start of a long competitive journey — each one a milestone on the way to the top.</p>
+      </div>
+      <div class="achv-grid">
+        <div class="medal-card">
+          <div class="medal-badge gold">🥇</div>
+          <span class="date">Zone Delhi</span>
+          <h3>Under-13 Gold Medal</h3>
+          <p>Won gold in the Under-13 category at the Zone Delhi badminton championship, competing against players in an older age bracket.</p>
+        </div>
+        <div class="medal-card">
+          <div class="medal-badge bronze">🥉</div>
+          <span class="date">April 2026</span>
+          <h3>Under-11 Bronze Medal</h3>
+          <p>Secured bronze in the Under-11 category, an early result that laid the foundation for the Zone Delhi gold that followed.</p>
+        </div>
+        <div class="medal-card">
+          <div class="medal-badge target">🎯</div>
+          <span class="date">The Mission</span>
+          <h3>Target: World No. 1</h3>
+          <p>The long-term goal driving daily training, fitness, and competition — building toward the top of the world rankings.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="journey" id="journey">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="kicker">The Road So Far</div>
+        <h2>Journey</h2>
+        <p>A young career, already in motion.</p>
+      </div>
+      <div class="tline">
+        <div class="item">
+          <div class="yr">April 2026</div>
+          <h4>Under-11 Bronze</h4>
+          <p>Competed and medalled in the Under-11 category, an early marker of consistent, competitive form.</p>
+        </div>
+        <div class="item">
+          <div class="yr">Zone Delhi</div>
+          <h4>Under-13 Gold</h4>
+          <p>Stepped up a category and won gold at the Zone Delhi championship — a signature result in the journey so far.</p>
+        </div>
+        <div class="item">
+          <div class="yr">Ahead</div>
+          <h4>State, National &amp; Beyond</h4>
+          <p>Training and competing with one goal in sight: climbing steadily toward the World No. 1 ranking.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="sponsorship">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="kicker">Support the Journey</div>
+        <h2>Sponsorship categories</h2>
+        <p>If you'd like to invest in a young athlete's journey to the top, here are the ways to get involved.</p>
+      </div>
+      <div class="spons-grid">
+        <div class="spons-card">
+          <span class="tier">Category A</span>
+          <h3>Equipment &amp; Gear</h3>
+          <p>Support for rackets, strings, shuttles, footwear, and training kit.</p>
+        </div>
+        <div class="spons-card">
+          <span class="tier">Category B</span>
+          <h3>Coaching &amp; Training</h3>
+          <p>Support for professional coaching sessions, fitness training, and sports science.</p>
+        </div>
+        <div class="spons-card">
+          <span class="tier">Category C</span>
+          <h3>Tournament &amp; Travel</h3>
+          <p>Support for tournament entry fees, travel, and accommodation for state and national events.</p>
+        </div>
+        <div class="spons-card">
+          <span class="tier">Category D</span>
+          <h3>Brand Partnership</h3>
+          <p>Logo placement on kit and long-term association as Vashu's career progresses.</p>
+        </div>
+        <div class="spons-card">
+          <span class="tier">Category E</span>
+          <h3>Nutrition &amp; Wellness</h3>
+          <p>Support for sports nutrition, recovery, and physiotherapy needs.</p>
+        </div>
+        <div class="spons-card">
+          <span class="tier">Category F</span>
+          <h3>General Contribution</h3>
+          <p>Open-ended support toward the overall training and competition journey.</p>
+        </div>
+      </div>
+      <div class="spons-note">
+        <strong>Interested in sponsoring Vashu?</strong> Reach out with the category you'd like to support, and we'll share details, current needs, and how the partnership would work.
+      </div>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <div class="wrap">
+      <div class="contact-card">
+        <div>
+          <h2>Get in touch</h2>
+          <p>For sponsorship, tournament invitations, media, or general enquiries about Vashu's badminton journey, write in — we usually reply within a couple of days.</p>
+          <a class="mail-btn" href="mailto:thrivewithkaushik@gmail.com">✉ thrivewithkaushik@gmail.com</a>
+        </div>
+        <div class="search-box">
+          <label for="siteSearch">Search this site on Google</label>
+          <form class="search-row" action="https://www.google.com/search" method="get" target="_blank" rel="noopener">
+            <input type="hidden" name="q" id="qPrefix" value="site:thrivewithkaushik.com/vashu-kaushik ">
+            <input type="text" id="siteSearch" name="q_display" placeholder="e.g. sponsorship, achievements..." autocomplete="off" aria-describedby="searchHelp">
+            <button type="submit">Search</button>
+          </form>
+          <small id="searchHelp">Opens a safe, scoped Google search for this site in a new tab — no data is stored.</small>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    Vashu Kaushik — Badminton Player · <a href="mailto:thrivewithkaushik@gmail.com">thrivewithkaushik@gmail.com</a>
+  </div>
+</footer>
+
+<script>
+  // Wire the visible search input to the actual Google query (site-scoped, safe, opens new tab)
+  (function(){
+    var form = document.querySelector('.search-row');
+    var visible = document.getElementById('siteSearch');
+    var hiddenPrefix = document.getElementById('qPrefix');
+    form.addEventListener('submit', function(e){
+      var term = visible.value.trim();
+      hiddenPrefix.value = 'site:thrivewithkaushik.com/vashu-kaushik ' + term;
+      visible.removeAttribute('name'); // prevent duplicate q param
+    });
+  })();
+</script>
 </body>
 </html>
